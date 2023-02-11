@@ -1,0 +1,77 @@
+// Read only and Read write are two new pesudo class selectors that comes in CSS-3.
+// Read only means: if you don't want to give access to the users to write.
+// Read wite menas: you can give access to the user to both read and write.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Pesudo Class</title>
+
+        <style>
+        
+            input:read-only{
+                color: blue;
+                border: 1px solid grey;
+                outline: none;
+            }
+
+        </style>
+</head>
+
+<body>
+    <form action="submit">
+
+        <label for="Email">Email: </label>
+        <input type="Email" placeholder="Enter your email" required id="Email">
+        <br>
+
+        <label for="Password">Password: </label>
+        <input type="password" placeholder="Enter Password" required id="Password">
+        <br>
+
+        <label for="Nickname">Domain Name</label>
+        <input type="text" name="Nickname" id="Nickname" value="hasdnode.dev"readonly>
+        <br>
+
+        <label for="Age">Age</label>
+        <input type="number" name="Age" id="Age" min="12" max="25">
+        <br>
+
+        <label class="container">Gender: </label>
+        <br>
+        <input type="radio" name="Male" id="Male">
+        <label for="Male">Male</label>
+        <input type="radio" name="female" id="female">
+        <label for="female">Female</label>
+        <br>
+
+        <label for="Hobbies">Hobbies: </label>
+        <input type="checkbox" name="Football" id="football">
+        <label for="football">Football</label>
+
+        <input type="checkbox" name="coding" id="coding">
+        <label for="coding">Coding</label>
+
+        <input type="checkbox" name="reading" id="read">
+        <label for="read">Book Reading</label>
+        <br>
+
+        <label for="country">Your Country</label>
+        <select name="country" id="country">
+            <option value="Select">Select</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="USA">USA</option>
+            <option value="UAE">UAE`</option>
+        </select>
+
+    </form>
+
+</body>
+
+</html>
